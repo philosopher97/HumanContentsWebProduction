@@ -1,9 +1,90 @@
 @charset "utf-8";
 /* CSS Document */
 
-button {
+body {
+	background-color: black;
+}
+/*button {
 	height: 50px;
 	width: 120px;
 	left: 0px;
 	cursor: pointer;
+}*/
+.box {
+	width: 720px;
+	height: 480px;
+	margin: 0 auto;
+	background-color: black;
 }
+
+.BGimg {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	z-index: 1;
+}
+
+.OBJimg {
+	position: absolute;
+	cursor: pointer;
+	z-index: 2;
+	animation: target_image 2s; 
+	animation-iteration-count: infinite;
+	transform-origin: 25% 100%;
+}
+
+@keyframes target_image {
+0% { transform: rotate(-10deg); }
+50% { transform: rotate(25deg) }
+100% { transform: rotate(-10deg); }
+}
+
+.OBJimg:hover{
+  animation-play-state:paused;
+}
+
+.text {
+	width: 720px;
+	height: 480px;
+	position: absolute;
+	text-align: center;
+	font-size: 20px;
+	overflow-y: scroll;
+	line-height: 2;
+	cursor: default;
+	z-index: -1;
+}
+
+.text_background {
+	background-color: white;
+	opacity: 0.5;
+	width: 720px;
+	height: 480px;
+	position: absolute;
+	z-index: -2;
+}
+
+.text::-webkit-scrollbar { /* 스크롤바 숨기기 */
+    display: none; /* Chrome, Safari, Opera에서만 작동함 */
+}
+
+#text_bg {
+}
+
+#text {
+}
+
+#obj {
+}
+
+/*div {
+
+}
+
+div.box {
+	width: 90%;
+	height: 60%;
+	background-color: #99ccff;
+	overflow: scroll;
+}
+*/
