@@ -4,12 +4,7 @@
 body {
 	background-color: black;
 }
-/*button {
-	height: 50px;
-	width: 120px;
-	left: 0px;
-	cursor: pointer;
-}*/
+
 .box {
 	width: 720px;
 	height: 480px;
@@ -34,9 +29,9 @@ body {
 }
 
 @keyframes target_image {
-0% { transform: rotate(-10deg); }
-50% { transform: rotate(25deg) }
-100% { transform: rotate(-10deg); }
+0% { transform: rotate(-5deg); }
+50% { transform: rotate(10deg) }
+100% { transform: rotate(-5deg); }
 }
 
 .OBJimg:hover{
@@ -55,7 +50,7 @@ body {
 	z-index: -1;
 }
 
-.text_background {
+.text_bg {
 	background-color: white;
 	opacity: 0.5;
 	width: 720px;
@@ -77,14 +72,44 @@ body {
 #obj {
 }
 
-/*div {
-
+.start_btn{
+	display: block;
+	text-decoration: none;
+	color: black;
+	margin: 0 auto;
+	padding: 8px 12px ;
+	font-weight: bolder;
+	background: rgb(217,216,218);
+	border-radius: 4px;
+	text-align: center;
+	transition: color 0.3s, border-color 0.3s;
+	width: 100px;
+	cursor: pointer;
 }
 
-div.box {
-	width: 90%;
-	height: 60%;
-	background-color: #99ccff;
-	overflow: scroll;
+.start_btn:hover{
+    color: red;
 }
-*/
+
+.btn{
+	position: absolute;
+	display: block;
+	text-decoration: none;
+	color: black;
+	top: 100px;
+	left: 400px;
+	margin: 0 auto;
+	padding: 8px 12px ;
+	font-weight: bolder;
+	background: rgb(217,216,218);
+	border-radius: 4px;
+	text-align: center;
+	transition: color 0.3s, border-color 0.3s;
+	width: 100px;
+	cursor: pointer;
+	z-index: -3;
+}
+
+.btn:hover{
+    color: red;
+}
