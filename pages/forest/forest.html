@@ -1,32 +1,45 @@
 <!doctype html>
 <html>
+<!-- 일반 스토리 페이지 유형 -->
 <head>
 	<meta charset="utf-8">
 	<title>Annabel Lee : Beyond Death, Toward Love</title>
+	<!-- CSS 스타일시트 링크 -->
 	<link href="../../css/style.css" rel="stylesheet" type="text/css">
+	<!-- 구글 웹폰트 링크
+	https://fonts.google.com/?preview.text=%EC%95%A0%EB%84%88%EB%B2%A8%20%EB%A6%AC&preview.text_type=custom&subset=korean-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+	<!-- Javascript 링크 -->
 	<script src="../../script/script.js"></script>
 </head>
 <body>
 	<br><br>
+	<!-- 이미지 및 텍스트가 표시되는 틀 -->
 	<div class="box">
+		<!-- 불투명도 50%인 흰 텍스트 배경 -->
 		<div id="text_bg" class="text_bg"></div>
+		<!-- 텍스트 -->
 		<div id="text" class="text">
-			<b>
+			<p>
+				달님의 말씀에 따라,<br>
+				저는 애너벨을 저 머나먼 죽음으로부터 구해오기로 마음먹었습니다.<br>
+				숲으로 제가 가는 길에 제가 의지할 건<br>오직 등불 하나뿐이었습니다.<br>
+				그곳은 달님조차 볼 수 없는 곳이었습니다.<br>
+				하지만 애너벨을 생각하면 느껴지는 아련함은<br>
+				저를 제가 알지 못하는 곳까지 이끌어주었습니다.<br>
+				그렇게 얼마나 걸었을까,<br>
+				어디선가 희미한 음악 소리가 들리기 시작했습니다.<br>
 				<br>
-				파도는 저 바다 어딘가에서 생겨나서 해변으로 향하고,<br>
-				해변과 만나고, 그리고 바다를 향해 다시 떠납니다.<br>
-				그리고 우리는 인연 또한 그러한 것을 알고 있습니다.<br>
-				저도 그런 이별을 해보지 않은 건 아니에요.<br>
-				차라리 애너벨이 병이나 사고로 저를 떠났다면<br>
-				받아들일 수 있었을 것입니다.<br>
-				하지만 그건 사고도, 병도 아니었습니다.<br>
-				그리고 저는 홀로 남아있죠.<br>
-		  </b>
+			</p>
 		</div>
-		<img src="../../images/butterfly.png" id="obj" class="OBJimg" onclick="ShowText();" style="margin-top:80px; margin-left:550px;">
-		<img src="../../images/forest/bg_forest.png" class="BGimg">
+		<!-- 오브젝트 이미지 -->
+		<img src="../../images/butterfly.png" id="obj" class="OBJimg" onclick="ShowText(); FadeIn_bg(); FadeIn_text();" style="margin-top: 100px; margin-left:200px;" alt="">
+		<!-- 배경 이미지 -->
+		<img src="../../images/forest/bg_forest.jpg" class="BGimg" alt="">
 	</div>
 	<br><br>
+	<!-- 다음 페이지로 넘어가는 버튼 -->
 	<a href="#" id="next_btn" class="btn">NEXT</a>
 </body>
 </html>
