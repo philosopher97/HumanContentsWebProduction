@@ -1,27 +1,18 @@
 <!doctype html>
 <html>
-<!-- 일반 스토리 페이지 유형 -->
 <head>
 	<meta charset="utf-8">
 	<title>Annabel Lee : Beyond Death, Toward Love</title>
-	<!-- CSS 스타일시트 링크 -->
 	<link href="../../css/style.css" rel="stylesheet" type="text/css">
-	<!-- 구글 웹폰트 링크
-	https://fonts.google.com/?preview.text=%EC%95%A0%EB%84%88%EB%B2%A8%20%EB%A6%AC&preview.text_type=custom&subset=korean-->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=East+Sea+Dokdo&display=swap" rel="stylesheet">
-	<!-- Javascript 링크 -->
 	<script src="../../script/script.js"></script>
 </head>
 <body>
 	<br><br>
-	<!-- 이미지 및 텍스트가 표시되는 틀 -->
 	<div class="box">
-		<!-- 불투명도 50%인 흰 텍스트 배경 -->
 		<div id="text_bg" class="text_bg"></div>
-		<!-- 텍스트 -->
 		<div id="text" class="text">
-			<p>
+			<b>
+				<br>
 				그녀의 이름은 애너벨 리.<br>
 				그녀는 때로는 해처럼 아름다웠고,
 				때로는 달처럼 아름다웠어요.<br>
@@ -31,16 +22,12 @@
 				우리는 어렸고, 그 타오르는 사랑은 오직 서로에게만 향했으니까요.<br>
 				그런 사랑은 누군가가 부러워할 만 했습니다.<br>
 				비록 그게 천사들이라 할지라도요.<br>
-				<br>
-			</p>
+		  </b>
 		</div>
-		<!-- 오브젝트 이미지 -->
-		<img src="../../images/butterfly.png" id="obj" class="OBJimg" onclick="ShowText(); FadeIn_bg(); FadeIn_text();" style="margin-top: 100px; margin-left:200px;" alt="">
-		<!-- 배경 이미지 -->
-		<img src="../../images/introduction/bg_page2.jpg" class="BGimg" alt="">
+		<img src="../../images/butterfly.png" id="obj" class="OBJimg" onclick="ShowText();" style="margin-top: 80px; margin-left:250px;">
+		<img src="../../images/introduction/bg_page2.png" class="BGimg">
 	</div>
 	<br><br>
-	<!-- 다음 페이지로 넘어가는 버튼 -->
 	<a href="page3.html" id="next_btn" class="btn">NEXT</a>
 </body>
 </html>
