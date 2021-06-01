@@ -31,6 +31,7 @@ moon {
 	height: 680px;
 	margin: 0 auto;
 	background-color: black;
+	position: relative;
 }
 
 .BGimg {
@@ -256,4 +257,40 @@ moon {
 	transform-box: fill-box;
 	transform-origin: 50% 50%;
 	animation-play-state: paused;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.butterfly {
+	position: absolute;
+	width:165px;
+	height:148px;
+	cursor: pointer;
+	z-index: 2;
+	background-size: cover;
+	animation-name: flying;
+	animation-duration: 0.7s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes flying {
+  0%   {left:0px; top:0px;background-image: url("../images/butterfly/1.png");}      
+  20%   {left:0px; top:0px;background-image: url("../images/butterfly/2.png");}           
+  40%   {left:0px; top:0px;background-image: url("../images/butterfly/3.png");}           
+  60%   {left:0px; top:0px;background-image: url("../images/butterfly/4.png");}          
+  80%   {left:0px; top:0px;background-image: url("../images/butterfly/5.png");}         
+  100%  {left:0px; top:0px;background-image: url("../images/butterfly/6.png");}
 }
