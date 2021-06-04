@@ -22,7 +22,7 @@
 		<!-- 텍스트 -->
 		<div id="text" class="text">
 			<p>
-				어느 날, 여느때와 다름없이 행복 없는 잠이 들지 못한 채<br>
+				어느 날, 저는 여느때처럼 잠에 들지 못한 채<br>
 				뒤척이며 울고 있었습니다.<br>
 				그때 창문 결로 어떤 목소리가 달빛처럼 쏟아지는 게 느껴졌습니다.<br>
 				그건 귀가 아니라 마음으로 들리는 소리였죠.<br>
@@ -31,17 +31,19 @@
 				눈물을 거두고 다시 웃으며 살아가 줘. 부탁이야.”</moon><br>
 				<br>
 				“애너벨이 저에게는 달이었고, 해였으며, 세상이었습니다.<br>
-				달님. 지금 저에게 달빛이 무슨 의미가 있을까요?”<br>
+				달님.<br>
+				 지금 저에게 지금 달빛이 무슨 의미가 있을까요?”<br>
 				<br>
 				<moon>“너의 슬픔을 멈추게 하려면 내가 사라지거나,<br>
 				아니면 그 아이를 구하는 수 밖에 없겠구나.<br>
 				좋아. 내가 애너벨을 구할 수 있는 방법을 알려줄게.”</moon><br>
 				<br>
-				나는 달님에게 그 방법을 여쭈고, 그에 달께서는 답해주셨습니다.<br>
+				저는 달님에게 그 방법을 여쭈었고,<br>
+				달께서는 답해주셨습니다.<br>
 				<br>
 				<moon>“나는 분명히 봤어.<br>
-				천사들이 애너벨의 영혼을 바다 밑의 악마들 옆에 위치한 감옥에 가두었지.<br>
-				그러니 천사들에게 가 열쇠를 얻은 다음,<br>
+				천사들이 애너벨의 영혼을 바다 밑의 악마들 옆의 감옥에 가뒀어.<br>
+				그러니까 천사들에게 가 열쇠를 얻은 다음,<br>
 				악마들에게서 애너벨을 구해내자.<br>
 				언덕 위의 숲으로 가면 천사들의 나라로 가는 길이 있을테야.<br>
 				이제 눈물을 멈추겠니?”</moon><br>
@@ -49,12 +51,14 @@
 			</p>
 		</div>
 		<!-- 오브젝트 이미지 -->
-		<img src="../../images/butterfly.png" id="obj" class="OBJimg" onclick="ShowText(); FadeIn_bg(); FadeIn_text();" style="margin-top: 100px; margin-left:200px;" alt="">
+		<div class="butterfly" id="obj" onclick="ShowText(); FadeIn_bg(); FadeIn_text();" style="margin-top:200px; margin-left:200px;"></div>
 		<!-- 배경 이미지 -->
 		<img src="../../images/moon/bg_moon.jpg" class="BGimg" alt="">
 	</div>
 	<br><br>
-	<!-- 다음 페이지로 넘어가는 버튼 -->
-	<a href="../forest/forest.html" id="next_btn" class="btn">NEXT</a>
+	<!-- 다음 페이지로 넘어가는 버튼-->
+	<div style="width:1020px; margin: 0 auto;">
+	<a href="../forest/forest.html"><img src="../../images/buttons/next.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/next_hover.png'" onmouseout="this.src='../../images/buttons/next.png'"></a>
+	</div>
 </body>
 </html>

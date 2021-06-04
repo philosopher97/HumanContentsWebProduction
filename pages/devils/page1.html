@@ -22,17 +22,32 @@
 		<!-- 텍스트 -->
 		<div id="text" class="text">
 			<p>
-				그렇게 얼마나 시간이 흘렀을까, 괴물이 입을 열었습니다. 
+				그렇게 얼마나 시간이 흘렀을까, 괴물이 입을 열었습니다. <br><br>
+				"네놈이 선택한 결말이 바로 이것이다.<br>
+				아마 넌 여기에 온 것을 평생 후회할거야."<br><br>
+				괴물은 이 말을 남긴 채, <br>
+				어둠 속으로 사라졌습니다.<br><br>
+				심해란 이런 곳이었을까요?<br>
+				귀가 먹먹하고, 답답한 마음이 들었습니다.<br>
+				하지만 이곳에 애너벨이 붙잡혀 있다면<br>
+				이곳이 어떤 곳이든 상관없었습니다.<br>
+				저는 그저 애너벨을 구해야 했으니까요.<br><br>
+				그곳은 천사들의 나라와는 너무나 달랐습니다.<br>
+				여긴 어둠이 가득한 곳이었고,<br>
+				간신히 앞을 볼 정도의 빛이<br>
+				붉은 복도와 바닥, 천장을 비추고 있었습니다.<br>
 				<br>
 			</p>
 		</div>
 		<!-- 오브젝트 이미지 -->
-		<img src="../../images/butterfly.png" id="obj" class="OBJimg" onclick="ShowText(); FadeIn_bg(); FadeIn_text();" style="margin-top: 100px; margin-left:200px;" alt="">
+		<div class="butterfly" id="obj" onclick="ShowText(); FadeIn_bg(); FadeIn_text();" style="margin-top:200px; margin-left:200px;"></div>
 		<!-- 배경 이미지 -->
 		<img src="../../images/devils/bg_page1.jpg" class="BGimg" alt="">
 	</div>
 	<br><br>
 	<!-- 다음 페이지로 넘어가는 버튼 -->
-	<a href="page2.html" id="next_btn" class="btn">NEXT</a>
+	<div style="width:1020px; margin: 0 auto;">
+	<a href="page2.html"><img src="../../images/buttons/next.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/next_hover.png'" onmouseout="this.src='../../images/buttons/next.png'"></a>
+	</div>
 </body>
 </html>

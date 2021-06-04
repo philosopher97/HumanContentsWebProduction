@@ -1,7 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=East+Sea+Dokdo&family=Yeon+Sung&display=swap');  /* 'Cute+Font' 부분만 변경하면 폰트 변경 가능 */
-
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=East+Sea+Dokdo&family=Yeon+Sung&display=swap');
 
 body {
 	background-color: black;
@@ -31,6 +30,7 @@ moon {
 	height: 680px;
 	margin: 0 auto;
 	background-color: black;
+	position: relative;
 }
 
 .BGimg {
@@ -113,61 +113,23 @@ moon {
     display: none; /* Chrome, Safari, Opera에서만 작동함 */
 }
 
-#text_bg {
-	
-}
-
-#text {
-	
-}
-
-#obj {
-	
-}
-
 .start_btn{
 	display: block;
-	text-decoration: none;
-	color: black;
 	margin: 0 auto;
-	padding: 8px 12px ;
-	font-weight: bolder;
-	background: rgb(217,216,218);
-	border-radius: 4px;
-	text-align: center;
-	transition: color 0.3s, border-color 0.3s;
-	width: 100px;
+	width: 300px;
 	cursor: pointer;
 }
 
-.start_btn:hover{
-    color: red;
-}
-
-.btn{
+.next_btn{
 	position: absolute;
 	display: block;
-	text-decoration: none;
-	color: black;
 	top: -100px;
 	left: -400px;
 	margin: 0 auto;
-	padding: 8px 12px ;
-	font-weight: bolder;
-	background: rgb(217,216,218);
-	border-radius: 4px;
-	text-align: center;
-	transition: color 0.3s, border-color 0.3s;
-	width: 100px;
+	width: 300px;
 	cursor: pointer;
 	z-index: -3;
 }
-
-.btn:hover{
-    color: red;
-}
-
-
 
 .OBJ_selection {
 	position: absolute;
@@ -191,45 +153,23 @@ moon {
 
 #back_btn {
 	position: absolute;
-	display: block;
-	text-decoration: none;
-	color: black;
 	top: -100px;
 	left: -400px;
-	margin: 0 auto;
-	padding: 8px 12px ;
-	font-weight: bolder;
-	background: rgb(217,216,218);
-	border-radius: 4px;
-	text-align: center;
-	transition: color 0.3s, border-color 0.3s;
-	width: 100px;
+	margin-left: 100px;
+	width: 200px;
 	cursor: pointer;
 	z-index: -3;
 }
 
 #to_index_btn {
 	position: absolute;
-	display: block;
-	text-decoration: none;
-	color: black;
 	top: -100px;
 	left: -400px;
-	margin: 0 auto;
-	padding: 8px 12px ;
-	font-weight: bolder;
-	background: rgb(217,216,218);
-	border-radius: 4px;
-	text-align: center;
-	transition: color 0.3s, border-color 0.3s;
-	width: 100px;
+	margin-left: 300px;
+	width: 290px;
 	cursor: pointer;
 	z-index: -3;
 }
-
-
-
-
 
 #img2 {
 	width: 1020px;
@@ -256,4 +196,26 @@ moon {
 	transform-box: fill-box;
 	transform-origin: 50% 50%;
 	animation-play-state: paused;
+}
+
+.butterfly {
+	position: absolute;
+	width:165px;
+	height:148px;
+	cursor: pointer;
+	z-index: 2;
+	background-size: cover;
+	animation-name: flying;
+	animation-duration: 0.7s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes flying {
+  0%   {left:0px; top:0px;background-image: url("../images/butterfly/1.png");}      
+  20%   {left:0px; top:0px;background-image: url("../images/butterfly/2.png");}           
+  40%   {left:0px; top:0px;background-image: url("../images/butterfly/3.png");}           
+  60%   {left:0px; top:0px;background-image: url("../images/butterfly/4.png");}          
+  80%   {left:0px; top:0px;background-image: url("../images/butterfly/5.png");}         
+  100%  {left:0px; top:0px;background-image: url("../images/butterfly/6.png");}
 }
