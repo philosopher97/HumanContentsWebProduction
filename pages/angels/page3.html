@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<!-- 일반 스토리 페이지 유형 -->
+<head>
+	<meta charset="utf-8">
+	<title>Annabel Lee : Beyond Death, Toward Love</title>
+	<!-- CSS 스타일시트 링크 -->
+	<link href="../../css/style.css" rel="stylesheet" type="text/css">
+	<!-- 구글 웹폰트 링크
+	https://fonts.google.com/?preview.text=%EC%95%A0%EB%84%88%EB%B2%A8%20%EB%A6%AC&preview.text_type=custom&subset=korean-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+	<!-- Javascript 링크 -->
+	<script src="../../script/script.js"></script>
+</head>
+<body>
+	<br><br>
+	<!-- 이미지 및 텍스트가 표시되는 틀 -->
+	<div class="box">
+		<!-- 불투명도 50%인 흰 텍스트 배경 -->
+		<div id="text_bg" class="text_bg"></div>
+		<!-- 텍스트 -->
+		<div id="text" class="text">
+			<p>
+				“조심해. <br>
+				악마들은 항상 거짓말을 하니까.”<br><br>
+				천사의 말에 저는 의아해하며 물었습니다.<br><br>
+				“왜 그 말을 저에게 해주시는거죠? <br>
+				천사들은 저를 싫어하지 않나요?”<br><br>
+				그러자 천사가 말했습니다.<br><br>
+				“끝이 궁금할 뿐이야. <br>
+				여기에 사람이 들어온 것도, <br>
+				그 사람이 천사들의 말을 듣지 않은 것도,<br>
+				또 그들을 공격한 것도 처음이니까. <br>
+				그 모든 처음의 마지막이 어떨지, 그냥 궁금해. <br>
+				잘가. <br>
+				하지만 바다도 여기처럼 쉬울거라 생각은 마.”<br><br>
+				그 말을 끝으로 천사는 날아갔고, <br>
+				저 역시 동굴을 빠져나왔습니다.<br>
+				<br>
+			</p>
+		</div>
+		<!-- 오브젝트 이미지 -->
+		<div class="butterfly" id="obj" onclick="ShowText(); FadeIn_bg(); FadeIn_text();" style="margin-top:200px; margin-left:200px;"></div>
+		<!-- 배경 이미지 -->
+		<img src="../../images/angels/bg_page3.jpg" class="BGimg" alt="">
+	</div>
+	<br><br>
+	<!-- 다음 페이지로 넘어가는 버튼-->
+	<div style="width:1020px; margin: 0 auto;">
+	<a href="../ocean/page1.html"><img src="../../images/buttons/next.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/next_hover.png'" onmouseout="this.src='../../images/buttons/next.png'"></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<!-- 일반 스토리 페이지 유형 -->
+<head>
+	<meta charset="utf-8">
+	<title>Annabel Lee : Beyond Death, Toward Love</title>
+	<!-- CSS 스타일시트 링크 -->
+	<link href="../../css/style.css" rel="stylesheet" type="text/css">
+	<!-- 구글 웹폰트 링크
+	https://fonts.google.com/?preview.text=%EC%95%A0%EB%84%88%EB%B2%A8%20%EB%A6%AC&preview.text_type=custom&subset=korean-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+	<!-- Javascript 링크 -->
+	<script src="../../script/script.js"></script>
+</head>
+<body>
+	<br><br>
+	<!-- 이미지 및 텍스트가 표시되는 틀 -->
+	<div class="box">
+		<!-- 불투명도 50%인 흰 텍스트 배경 -->
+		<div id="text_bg" class="text_bg"></div>
+		<!-- 텍스트 -->
+		<div id="text" class="text">
+			<p>
+				그리고 제 눈 앞에는, <br>
+				어머니가 잠들기 전에 해주신 이야기에서 나왔던 <br>
+				악마들이 서있었습니다. <br><br>
+				그들은 천사들처럼 웃고 있었지만, <br>
+				더 무서운 눈과 표정으로 저를 쳐다보고 있었습니다. <br>
+				저는 놀라움과 두려움에 잠시 말을 잇지 못했지만, <br>
+				악마들은 마치 제가 올 것을 이미 알고 있던 것 같았습니다. <br><br>
+				“천사들을 공격하여 열쇠를 훔치고, <br>
+				바다를 헤쳐나가 괴물의 입에 매달려서 <br>
+				우리들이 있는 이 심해까지 찾아오다니. <br>
+				알고는 있었지만 정말 놀라운 아이로구나. <br>
+				저 아이를 그렇게 사랑하니?”<br><br>
+				“너희 같은 악마들은 내 사랑을 이해하지 못할껄? <br>
+				너희가 이런 심해가 아니라 <br>
+				저 땅 밑 지옥에 있든, <br>
+				저 높은 하늘에 있든 상관없어. <br>
+				애너벨을 구할 수 있다면 난 어디든 갈꺼고, <br>
+				무엇이든 할꺼야. <br>
+				난 이 열쇠를 가져왔다. <br>
+				어서 애너벨을 나에게 돌려줘.”<br>
+				<br>
+			</p>
+		</div>
+		<!-- 오브젝트 이미지 -->
+		<div class="butterfly" id="obj" onclick="ShowText(); FadeIn_bg(); FadeIn_text();" style="margin-top:200px; margin-left:200px;"></div>
+		<!-- 배경 이미지 -->
+		<img src="../../images/devils/bg_page2.jpg" class="BGimg" alt="">
+	</div>
+	<br><br>
+	<!-- 다음 페이지로 넘어가는 버튼 -->
+	<div style="width:1020px; margin: 0 auto;">
+	<a href="page3.html"><img src="../../images/buttons/next.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/next_hover.png'" onmouseout="this.src='../../images/buttons/next.png'"></a>
+	</div>
+</body>
+</html>
