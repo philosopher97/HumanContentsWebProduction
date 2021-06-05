@@ -219,3 +219,21 @@ moon {
   80%   {left:0px; top:0px;background-image: url("../images/butterfly/5.png");}         
   100%  {left:0px; top:0px;background-image: url("../images/butterfly/6.png");}
 }
+
+#lookBack_btn {
+	position: absolute;
+	top: -100px;
+	width: 300px;
+	cursor: pointer;
+	margin: 0 auto;
+	z-index: -3;
+}
+
+#notLookBack_btn {
+	position: absolute;
+	top: -100px;
+	width: 480px;
+	cursor: pointer;
+	margin: 0 auto;
+	z-index: -3;
+}

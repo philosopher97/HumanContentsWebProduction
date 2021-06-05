@@ -103,3 +103,61 @@ function ShowImages3() {  // eslint-disable-line no-unused-vars
 	next_btn.style.top="auto";
 	next_btn.style.left="auto";}, 6500);
 }
+
+function ShowImages4() {  // eslint-disable-line no-unused-vars
+	setTimeout(function() {var x = document.getElementById("text"); x.style.zIndex=6;
+	x.style.animationPlayState = "running";}, 2000);
+	
+	setTimeout(function() {var x = document.getElementById("text_bg"); x.style.zIndex=5;
+	x.style.animationPlayState = "running";}, 2000);
+	
+	setTimeout(function() {var btn = document.getElementById("lookBack_btn");
+	btn.style.position="relative";
+	btn.style.zIndex=4;
+	btn.style.top="auto";
+	btn.style.left="auto";}, 5000);
+	
+	setTimeout(function() {var btn = document.getElementById("notLookBack_btn");
+	btn.style.position="relative";
+	btn.style.zIndex=4;
+	btn.style.top="auto";
+	btn.style.left="230px";}, 5000);
+}
+
+function ShowImages5() {  // eslint-disable-line no-unused-vars
+	setTimeout(function() {var img2 = document.getElementById("img2");
+	img2.style.zIndex=3; img2.style.animationPlayState="running"}, 1500);
+	
+	setTimeout(function() {var img3 = document.getElementById("img3");
+	img3.style.zIndex=4; img3.style.animationPlayState="running"}, 4000);
+	
+	
+	setTimeout(function() {var x = document.getElementById("text"); x.style.zIndex=6;
+	x.style.animationPlayState = "running";}, 6500);
+	
+	setTimeout(function() {var x = document.getElementById("text_bg"); x.style.zIndex=5;
+	x.style.animationPlayState = "running";}, 6500);
+
+	setTimeout(function() {var next_btn = document.getElementById("next_btn");
+	next_btn.style.position="relative";
+	next_btn.style.zIndex=4;
+	next_btn.style.top="auto";
+	next_btn.style.left="auto";}, 7500);
+}
+
+function ShowImages6() {  // eslint-disable-line no-unused-vars
+	setTimeout(function() {var x = document.getElementById("text"); x.style.zIndex=6;
+	x.style.animationPlayState = "running";}, 2000);
+	
+	setTimeout(function() {var x = document.getElementById("text_bg"); x.style.zIndex=5;
+	x.style.animationPlayState = "running";}, 2000);
+	
+	setTimeout(function() {var next_btn = document.getElementById("next_btn");
+	next_btn.style.position="relative";
+	next_btn.style.zIndex=4;
+	next_btn.style.top="auto";
+	next_btn.style.left="auto";}, 3000);
+}
+
+
+
