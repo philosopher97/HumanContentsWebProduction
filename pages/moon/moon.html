@@ -58,7 +58,13 @@
 	<br><br>
 	<!-- 다음 페이지로 넘어가는 버튼-->
 	<div style="width:1020px; margin: 0 auto;">
-	<a href="../forest/forest.html"><img src="../../images/buttons/next.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/next_hover.png'" onmouseout="this.src='../../images/buttons/next.png'"></a>
+	<a href="../forest/forest.html"><img src="../../images/buttons/next.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/next_hover.png'" onmouseout="this.src='../../images/buttons/next.png'" onClick="parentf();"></a>
 	</div>
+	
+	<script>
+		function parentf() {
+			window.parent.location.href = "../../second.html";
+		}
+	</script>
 </body>
 </html>
