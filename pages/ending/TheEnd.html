@@ -9,7 +9,7 @@
 	<!-- 구글 웹폰트 링크
 	https://fonts.google.com/?preview.text=%EC%95%A0%EB%84%88%EB%B2%A8%20%EB%A6%AC&preview.text_type=custom&subset=korean-->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=East+Sea+Dokdo&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	<!-- Javascript 링크 -->
 	<script src="../../script/script.js"></script>
 </head>
@@ -17,35 +17,26 @@
 	<br><br>
 	<!-- 이미지 및 텍스트가 표시되는 틀 -->
 	<div class="box">
-		<!-- 불투명도 50%인 흰 텍스트 배경 -->
-		<div id="text_bg" class="text_bg"></div>
 		<!-- 텍스트 -->
 		<div id="text" class="text">
-			<p>
-				저는 악마들이 내건 조건을 지키기 위해 침묵으로 답했습니다.<br>
-				애너벨은 아마 그런 저를 이해할 수 없다는 표정으로<br>
-				바라보고 있을 테죠.<br>
-				<br>
-				저는 그런 얼굴조차 너무나 그리웠지만,<br>
-				우선 지금은 참아야만 했습니다.<br>
-				<br>
-			</p>
+			<p style="font-family: 'Dancing Script'; font-size: 150px;, cursive; margin-top:10px;">The End</p>
 		</div>
-
-		<img src="../../images/path/bg_notLookBack.jpg" style="width:1020px;" alt="">
-
-
+		
+		<div class="butterfly" id="obj" style="margin-top:220px; margin-left:300px; width:80px; height:60px; cursor: auto;"></div>
+		
+		<!-- 배경 이미지 -->
+		<img src="../../images/ending/TheEnd.jpg" class="BGimg" alt="">
 	</div>
 	<br><br>
 	
 	<!-- 다음 페이지로 넘어가는 버튼-->
 	<div style="width:1020px; margin: 0 auto;">
-	<a href="page2.html"><img src="../../images/buttons/next.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/next_hover.png'" onmouseout="this.src='../../images/buttons/next.png'"></a>
+	<a href="../../title.html"><img src="../../images/buttons/init.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/init_hover.png'" onmouseout="this.src='../../images/buttons/init.png'"></a>
 	</div>
 	
 	<script>
 		ShowImages6();
 	</script>
-
+	
 </body>
 </html>

@@ -11,12 +11,6 @@ p {
 	font-weight: bold;
 }
 
-test {
-	font-family: 'East Sea Dokdo', cursive;
-	color: red;
-	font-weight: 100;
-}
-
 moon {
 	font-family: 'Yeon Sung', cursive;
 	color: blue;
@@ -40,24 +34,6 @@ moon {
 	z-index: 1;
 }
 
-.OBJimg {
-	position: absolute;
-	cursor: pointer;
-	z-index: 2;
-	animation: target_image 2s; 
-	animation-iteration-count: infinite;
-	transform-origin: 25% 100%;
-}
-
-@keyframes target_image {
-0% { transform: rotate(-5deg); }
-50% { transform: rotate(10deg) }
-100% { transform: rotate(-5deg); }
-}
-
-.OBJimg:hover{
-  animation-play-state:paused;
-}
 
 .text {
 	width: 1020px;
@@ -129,6 +105,19 @@ moon {
 	width: 300px;
 	cursor: pointer;
 	z-index: -3;
+	animation: 1s linear 0s 1 normal forwards running FadeIn_btn;
+	transform-box: fill-box;
+	transform-origin: 50% 50%;
+	animation-play-state: paused;
+}
+
+@keyframes FadeIn_btn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .OBJ_selection {
@@ -159,6 +148,10 @@ moon {
 	width: 200px;
 	cursor: pointer;
 	z-index: -3;
+	animation: 1s linear 0s 1 normal forwards running FadeIn_btn;
+	transform-box: fill-box;
+	transform-origin: 50% 50%;
+	animation-play-state: paused;
 }
 
 #to_index_btn {
@@ -169,6 +162,10 @@ moon {
 	width: 290px;
 	cursor: pointer;
 	z-index: -3;
+	animation: 1s linear 0s 1 normal forwards running FadeIn_btn;
+	transform-box: fill-box;
+	transform-origin: 50% 50%;
+	animation-play-state: paused;
 }
 
 #img2 {
@@ -227,6 +224,10 @@ moon {
 	cursor: pointer;
 	margin: 0 auto;
 	z-index: -3;
+	animation: 1s linear 0s 1 normal forwards running FadeIn_btn;
+	transform-box: fill-box;
+	transform-origin: 50% 50%;
+	animation-play-state: paused;
 }
 
 #notLookBack_btn {
@@ -236,4 +237,8 @@ moon {
 	cursor: pointer;
 	margin: 0 auto;
 	z-index: -3;
+	animation: 1s linear 0s 1 normal forwards running FadeIn_btn;
+	transform-box: fill-box;
+	transform-origin: 50% 50%;
+	animation-play-state: paused;
 }
