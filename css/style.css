@@ -311,3 +311,55 @@ p {
 	transform-origin: 50% 50%;
 	animation-play-state: paused;
 }
+
+#play_btn {
+	position: absolute;
+	width: 50px;
+	cursor: pointer;
+	margin-left: 470px;
+	opacity: 0.5;
+}
+
+#play_btn:hover {
+	opacity: 1;
+}
+
+#stop_btn {
+	position: absolute;
+	width: 50px;
+	cursor: pointer;
+	margin-left: 550px;
+	opacity: 0.5;
+}
+
+#stop_btn:hover {
+	opacity: 1;
+}
+
+#effect_play {
+	width:50px;
+	position:absolute;
+	top: 620px;
+	left: 10px;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+#effect_play:hover {
+	opacity: 1;
+}
+
+#effect_stop {
+	width:50px;
+	position:absolute;
+	top: 620px;
+	left: 70px;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+#effect_stop:hover {
+	opacity: 1;
+}

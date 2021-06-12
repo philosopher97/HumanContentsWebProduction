@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Annabel Lee : Beyond Death, Toward Love</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="script/script.js"></script>
+</head>
+
+<body style="background:black; overflow-x:hidden; overflow-y:hidden;">
+	
+	<div style="width:1050px; margin: 0 auto;">
+	<img src="images/buttons/play.png" id="play_btn" alt="" onClick="playMusic();">
+
+	<img src="images/buttons/stop.png" id="stop_btn" alt="" onClick="stopMusic();">
+	</div><br>
+	
+	<iframe id="frame" src="pages/introduction/page1.html" style="display:block; width:100vw; height: 100vh; border:0;"></iframe>
+	
+	<audio id="bgm" autoplay="autoplay" loop="loop"><source src="sounds/introduction.mp3" type="audio/mp3"></audio>  <!-- Chrome에서는 안됨. -->
+</body>
+</html>

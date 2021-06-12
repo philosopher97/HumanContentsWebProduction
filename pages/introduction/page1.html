@@ -38,6 +38,11 @@
 		
 		<!-- 배경 이미지 -->
 		<img src="../../images/introduction/bg_page1.jpg" class="BGimg" alt="">
+		
+		<!-- 효과음 버튼 -->
+		<img src="../../images/buttons/effect_play.png" alt="" onClick="playMusic();" id="effect_play">
+
+		<img src="../../images/buttons/effect_stop.png" alt="" onClick="stopMusic();" id="effect_stop">
 	</div>
 	<br><br>
 	
@@ -45,6 +50,8 @@
 	<div style="width:1020px; margin: 0 auto;">
 	<a href="page2.html"><img src="../../images/buttons/next.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/next_hover.png'" onmouseout="this.src='../../images/buttons/next.png'"></a>
 	</div>
+	
+	<audio id="bgm" autoplay="autoplay" loop="loop"><source src="../../sounds/effect/waves.mp3" type="audio/mp3"></audio>
 	
 	<script>
 		ShowImages6();

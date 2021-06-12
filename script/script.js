@@ -176,5 +176,12 @@ function ShowImages6() {  // eslint-disable-line no-unused-vars
 	next_btn.style.left="auto";}, 3000);
 }
 
+function stopMusic() {  // eslint-disable-line no-unused-vars
+	var bgm = document.querySelector('#bgm');
+	bgm.pause();
+}
 
-
+function playMusic() {  // eslint-disable-line no-unused-vars
+	var bgm = document.querySelector('#bgm');
+	bgm.play();
+}

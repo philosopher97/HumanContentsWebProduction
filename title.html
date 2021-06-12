@@ -7,6 +7,8 @@
 	<script src="script/script.js"></script>
 </head>
 
+<!-- 1400*1050 해상도 이상 권장. -->	
+	
 <body>
 	<br><br>
 	<div class="box">
@@ -15,8 +17,14 @@
 	</div>
 	<br><br>
 	<div style="width:1020px; margin: 0 auto;">
-	<a href="pages/introduction/page1.html"><img src="images/buttons/start.png" class="start_btn" alt="" onmouseover="this.src='images/buttons/start_hover.png'" onmouseout="this.src='images/buttons/start.png'"></a>
+	<a href="pages/introduction/page1.html"><img src="images/buttons/start.png" class="start_btn" alt="" onmouseover="this.src='images/buttons/start_hover.png'" onmouseout="this.src='images/buttons/start.png'" onClick="parentf();"></a>
 	</div>
+	
+	<script>
+		function parentf() {
+			window.parent.location.href = "introduction.html";
+		}
+	</script>
 	
 </body>
 </html>
