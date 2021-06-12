@@ -2,6 +2,43 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=East+Sea+Dokdo&family=Yeon+Sung&display=swap');
 
+@font-face {
+    font-family: 'HeirofLightBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'SangSangAnt';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/SangSangAnt.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Cafe24Syongsyong';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SangSangRock';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SangSangRockOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMKIRANGHAERANG';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMKIRANGHAERANG.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	background-color: black;
 }
@@ -11,11 +48,43 @@ p {
 	font-weight: bold;
 }
 
-moon {
-	font-family: 'Yeon Sung', cursive;
-	color: blue;
-	font-style: italic;
+.angels {
+	font-family: 'Cafe24Syongsyong';
+	font-size: 45px;
+	font-style:italic;
+	color: #DD9000;
+}
+
+.annabel {
+	font-family: 'Cafe24Oneprettynight';
 	font-size: 40px;
+	color:#E25DE5;
+}
+
+.devils {
+	font-family: 'BMKIRANGHAERANG';
+	font-weight: 100;
+	color: #730000;
+	font-style: italic;
+}
+
+.kentauros {
+	font-family: 'HeirofLightBold';
+	font-size: 40px;
+	color: #2E1F02;
+	font-style: italic;
+}
+
+.monster {
+	font-family: 'SangSangRock';
+	font-size: 45px;
+	color: #00093F;
+}
+
+.moon {
+	font-family: 'SangSangAnt';
+	color: #0E118B;
+	font-size: 65px;
 	font-weight: 100;
 }
 
@@ -54,7 +123,7 @@ moon {
 
 .text_bg {
 	background-color: white;
-	opacity: 0.5;
+	opacity: 0.7;
 	width: 1020px;
 	height: 680px;
 	position: absolute;
@@ -81,7 +150,7 @@ moon {
 		opacity: 0;
 	}
 	100% {
-		opacity: 0.5;
+		opacity: 0.7;
 	}
 }
 
