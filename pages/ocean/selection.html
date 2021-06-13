@@ -20,11 +20,25 @@
 		
 		<a href="B.html"><img src="../../images/ocean/obj_pole.png" class="OBJ_selection" alt="" style="width:800px; margin:300px 0px;"></a>
 		<a href="A.html"><img src="../../images/ocean/obj_rope.png" class="OBJ_selection" alt="" style="width:300px; margin:450px 600px;"></a>
-		<a href="C.html"><img src="../../images/ocean/obj_character.png" class="OBJ_selection" alt="" style="width:300px; margin:275px 0px;"></a>
+		<a href="C.html"><img src="../../images/ocean/obj_character.png" class="OBJ_selection" alt="" style="width:300px; margin:275px 0px;" onClick="parentf();"></a>
 		
 		
 		<!-- 배경 이미지 -->
 		<img src="../../images/ocean/bg_selection.jpg" class="BGimg" alt="">
+		
+		<!-- 효과음 버튼 -->
+		<img src="../../images/buttons/effect_play.png" alt="" onClick="playMusic();" id="effect_play">
+
+		<img src="../../images/buttons/effect_stop.png" alt="" onClick="stopMusic();" id="effect_stop">
 	</div>
+	
+	<audio id="bgm" autoplay="autoplay" loop="loop"><source src="../../sounds/effect/storm.mp3" type="audio/mp3"></audio>
+	
+	<script>
+		function parentf() {
+			window.parent.location.href = "../../ocean_C.html";
+		}
+	</script>
+	
 </body>
 </html>

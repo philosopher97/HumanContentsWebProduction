@@ -54,7 +54,10 @@
 			</p>
 		</div>
 		
-		
+		<!-- 효과음 버튼 -->
+		<img src="../../images/buttons/effect_play.png" alt="" onClick="playMusic();" id="effect_play">
+
+		<img src="../../images/buttons/effect_stop.png" alt="" onClick="stopMusic();" id="effect_stop">
 		
 		<!--<img src="../../images/kentauros/bg_A2.jpg" alt="" id="img2">-->
 		<div id="img3"><img src="../../images/angels/bg_A3.jpg" alt="" style="width:1020px;"></div>
@@ -68,6 +71,9 @@
 	<div style="width:1020px; margin: 0 auto;">
 	<a href="page3.html"><img src="../../images/buttons/next.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/next_hover.png'" onmouseout="this.src='../../images/buttons/next.png'"></a>
 	</div>
+	
+	<audio id="bgm" autoplay="autoplay"><source src="../../sounds/effect/sword.mp3" type="audio/mp3"></audio>
+	
 	<script>
 		ShowImages();
 	</script>

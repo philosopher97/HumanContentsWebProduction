@@ -199,10 +199,16 @@ p {
 	animation-play-state: paused;
 }
 
-@keyframes moving {
+/*@keyframes moving {
 0% { transform: rotate(0deg); }
 50% { transform: rotate(10deg); }
 100% { transform: rotate(0deg); }
+}*/
+
+@keyframes moving {
+0% { opacity: 1; }
+50% { opacity: 0.3; }
+100% { opacity: 1; }
 }
 
 .OBJ_selection:hover{
@@ -362,4 +368,15 @@ p {
 
 #effect_stop:hover {
 	opacity: 1;
+}
+
+#producer {
+	position: absolute;
+	margin-top:550px;
+	margin-left: 750px;
+	z-index: 10;
+	animation: 1s linear 0s 1 normal forwards running FadeIn_btn;
+	transform-box: fill-box;
+	transform-origin: 50% 50%;
+	animation-play-state: paused;
 }

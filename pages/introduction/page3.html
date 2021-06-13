@@ -41,6 +41,12 @@
 		<!-- 오브젝트 이미지 -->
 		<!--<div class="butterfly" id="obj" onclick="ShowText(); FadeIn_bg(); FadeIn_text();" style="margin-top:200px; margin-left:200px;"></div>-->
 		<!-- 배경 이미지 -->
+		
+		<!-- 효과음 버튼 -->
+		<img src="../../images/buttons/effect_play.png" alt="" onClick="playMusic();" id="effect_play">
+
+		<img src="../../images/buttons/effect_stop.png" alt="" onClick="stopMusic();" id="effect_stop">
+		
 		<img src="../../images/introduction/bg_page3.jpg" class="BGimg" alt="">
 	</div>
 	<br><br>
@@ -48,6 +54,8 @@
 	<div style="width:1020px; margin: 0 auto;">
 	<a href="page4.html"><img src="../../images/buttons/next.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/next_hover.png'" onmouseout="this.src='../../images/buttons/next.png'"></a>
 	</div>
+	
+	<audio id="bgm" autoplay="autoplay" loop="loop"><source src="../../sounds/effect/wind.MP3" type="audio/mp3"></audio>
 	
 	<script>
 		ShowImages6();

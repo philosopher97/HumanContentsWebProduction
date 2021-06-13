@@ -52,12 +52,19 @@
 		<!--<div class="butterfly" id="obj" onclick="ShowText(); FadeIn_bg(); FadeIn_text();" style="margin-top:200px; margin-left:200px;"></div>-->
 		<!-- 배경 이미지 -->
 		<img src="../../images/ocean/bg_page2.jpg" class="BGimg" alt="">
+		
+		<!-- 효과음 버튼 -->
+		<img src="../../images/buttons/effect_play.png" alt="" onClick="playMusic();" id="effect_play">
+
+		<img src="../../images/buttons/effect_stop.png" alt="" onClick="stopMusic();" id="effect_stop">
 	</div>
 	<br><br>
 	<!-- 다음 페이지로 넘어가는 버튼 -->
 	<div style="width:1020px; margin: 0 auto;">
 	<a href="selection.html"><img src="../../images/buttons/next.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/next_hover.png'" onmouseout="this.src='../../images/buttons/next.png'"></a>
 	</div>
+	
+	<audio id="bgm" autoplay="autoplay" loop="loop"><source src="../../sounds/effect/storm.mp3" type="audio/mp3"></audio>
 	
 	<script>
 		ShowImages6();

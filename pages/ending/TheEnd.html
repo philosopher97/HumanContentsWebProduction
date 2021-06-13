@@ -22,6 +22,8 @@
 			<p style="font-family: 'Dancing Script'; font-size: 150px;, cursive; margin-top:10px; color:white;">The End</p>
 		</div>
 		
+		<div id="producer"><p style="text-align: center; color: white; font-size: 35px;">제작 : Annabel Lee 팀<br>김태호 / 박혜미 / 오대준</p></div>
+		
 		<div class="butterfly" id="obj" style="margin-top:220px; margin-left:300px; width:80px; height:60px; cursor: auto;"></div>
 		
 		<!-- 배경 이미지 -->
@@ -31,8 +33,23 @@
 	
 	<!-- 다음 페이지로 넘어가는 버튼-->
 	<div style="width:1020px; margin: 0 auto;">
-	<a href="../../title.html"><img src="../../images/buttons/init.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/init_hover.png'" onmouseout="this.src='../../images/buttons/init.png'"></a>
+	<a href="../../title.html"><img src="../../images/buttons/init.png" id="next_btn" class="next_btn" alt="" onmouseover="this.src='../../images/buttons/init_hover.png'" onmouseout="this.src='../../images/buttons/init.png'" onClick="parentf();"></a>
 	</div>
+	
+	
+	
+	<script>
+		function parentf() {
+			window.parent.location.href = "../../index.html";
+		}
+		
+		function credit() {  // eslint-disable-line no-unused-vars
+			setTimeout(function() {var x = document.getElementById("producer");
+			x.style.animationPlayState = "running";}, 4000);
+		}
+		
+		credit();
+	</script>
 	
 	<script>
 		ShowImages6();

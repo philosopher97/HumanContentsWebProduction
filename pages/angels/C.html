@@ -53,10 +53,21 @@
 	<br><br>
 	<!-- 다음 페이지로 넘어가는 버튼 -->
 	<div style="width:1020px; margin: 0 auto;">
-	<a href="selection.html"><img src="../../images/buttons/back.png" id="back_btn" alt="" onmouseover="this.src='../../images/buttons/back_hover.png'" onmouseout="this.src='../../images/buttons/back.png'"></a>
+	<a href="selection.html"><img src="../../images/buttons/back.png" id="back_btn" alt="" onmouseover="this.src='../../images/buttons/back_hover.png'" onmouseout="this.src='../../images/buttons/back.png'" onClick="parentf_back();"></a>
 
-	<a href="../../index.html"><img src="../../images/buttons/init.png" id="to_index_btn" alt="" onmouseover="this.src='../../images/buttons/init_hover.png'" onmouseout="this.src='../../images/buttons/init.png'"></a>
+	<a href="../../index.html"><img src="../../images/buttons/init.png" id="to_index_btn" alt="" onmouseover="this.src='../../images/buttons/init_hover.png'" onmouseout="this.src='../../images/buttons/init.png'" onClick="parentf_index();"></a>
 	</div>
+	
+	<script>
+		function parentf_back() {
+			window.parent.location.href = "../../angels_selection.html";
+		}
+		
+		function parentf_index() {
+			window.parent.location.href = "../../index.html";
+		}
+	</script>
+	
 	<script>
 		ShowImages2();
 	</script>

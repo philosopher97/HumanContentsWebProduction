@@ -54,10 +54,16 @@
 	<br><br>
 	
 	<div style="width:1020px; margin: 0 auto;">
-	<a href="lookBack.html"><img src="../../images/buttons/look.png" id="lookBack_btn" alt="" onmouseover="this.src='../../images/buttons/look_hover.png'" onmouseout="this.src='../../images/buttons/look.png'"></a>
+	<a href="lookBack.html"><img src="../../images/buttons/look.png" id="lookBack_btn" alt="" onmouseover="this.src='../../images/buttons/look_hover.png'" onmouseout="this.src='../../images/buttons/look.png'" onClick="parentf();"></a>
 
 	<a href="notLookBack1.html"><img src="../../images/buttons/notLook.png" id="notLookBack_btn" alt="" onmouseover="this.src='../../images/buttons/notLook_hover.png'" onmouseout="this.src='../../images/buttons/notLook.png'"></a>
 	</div>
+	
+	<script>
+		function parentf() {
+			window.parent.location.href = "../../happy.html";
+		}
+	</script>
 	
 	<script>
 		ShowImages4();
